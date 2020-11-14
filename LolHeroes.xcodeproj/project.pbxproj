@@ -19,6 +19,7 @@
 		29EF87F92557318900B364C4 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF87F82557318900B364C4 /* FeedVC.swift */; };
 		29EF87FC255731A600B364C4 /* Setting VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF87FB255731A600B364C4 /* Setting VC.swift */; };
 		29EF8801255733DE00B364C4 /* Hero Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF8800255733DE00B364C4 /* Hero Details.swift */; };
+		29F468F1255D8F0400651A71 /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F468F0255D8F0400651A71 /* FirstCollectionViewCell.swift */; };
 		D974B5CD17738B7B1A532876 /* Pods_LolHeroes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B63C34A9D23650629E932D2 /* Pods_LolHeroes.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		29EF87F82557318900B364C4 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		29EF87FB255731A600B364C4 /* Setting VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Setting VC.swift"; sourceTree = "<group>"; };
 		29EF8800255733DE00B364C4 /* Hero Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hero Details.swift"; sourceTree = "<group>"; };
+		29F468F0255D8F0400651A71 /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
 		7587C6FEDAAA5F2E198E4B22 /* Pods-LolHeroes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LolHeroes.release.xcconfig"; path = "Target Support Files/Pods-LolHeroes/Pods-LolHeroes.release.xcconfig"; sourceTree = "<group>"; };
 		E2C1892BFC58DA9B127F733C /* Pods-LolHeroes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LolHeroes.debug.xcconfig"; path = "Target Support Files/Pods-LolHeroes/Pods-LolHeroes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +99,7 @@
 			children = (
 				296407E4255846B000F9BD07 /* Heroes.swift */,
 				296407ED25584A7C00F9BD07 /* FeedCell.swift */,
+				29F468F0255D8F0400651A71 /* FirstCollectionViewCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				29EF8801255733DE00B364C4 /* Hero Details.swift in Sources */,
 				296407E5255846B000F9BD07 /* Heroes.swift in Sources */,
 				296407EE25584A7C00F9BD07 /* FeedCell.swift in Sources */,
+				29F468F1255D8F0400651A71 /* FirstCollectionViewCell.swift in Sources */,
 				29EF87FC255731A600B364C4 /* Setting VC.swift in Sources */,
 				293635E22557239A0085A7C7 /* SceneDelegate.swift in Sources */,
 			);

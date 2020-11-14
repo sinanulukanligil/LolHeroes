@@ -9,18 +9,21 @@ import UIKit
 
 class Hero_Details: UIViewController {
     
-    var receivedHeroLabel = ""
+    @IBOutlet var heroLabel: UILabel!
+    @IBOutlet var heroImageView: UIImageView!
+    
+    var receivedHeroLabel : String?
+    var heroName: String?
     var receivedHeroImage: UIImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = heroName
 
         heroImageView.image = receivedHeroImage
         heroLabel.text = receivedHeroLabel
     }
-    @IBOutlet var heroImageView: UIImageView!
-    
-    @IBOutlet var heroLabel: UILabel!
+ 
     
 
 

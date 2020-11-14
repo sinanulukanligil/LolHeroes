@@ -10,6 +10,7 @@ import UIKit
 class FeedCell: UITableViewCell {
     @IBOutlet var feedCellLabel: UILabel!
     @IBOutlet var feedCellImage: UIImageView!
+    @IBOutlet var collectionView: UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -7,19 +7,32 @@
 
 import UIKit
 
-class FeedVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class FeedVC: UIViewController,UITableViewDelegate,UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
     
-  let heroArray = [diana,azir,ahri,akali,cass,fizz,galio,kassadin,katarina,leblanc,malzahar,neeko,orianna,qiyana,sylas,syndra,talon,twistedfate,veigar,viktor,vlad,yasuo,yone,ziggs,zoe,zed]
-    var chosenHero: heroes?
+  
+    var chosenHero: heroes? = nil
+    
+   var heroArray = [diana,azir,ahri,akali,cass,fizz,galio,kassadin,katarina,leblanc,malzahar,neeko,orianna,qiyana,sylas,syndra,talon,twistedfate,veigar,viktor,vlad,yasuo,yone,ziggs,zoe,zed]
+
+    @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var collectionViewHeader: UILabel!
     
     @IBOutlet var feedTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         feedTableView.delegate = self
         feedTableView.dataSource = self
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        
         
         feedTableView.rowHeight = UITableView.automaticDimension
         feedTableView.rowHeight = 200
+        
+        
         
       
         
@@ -41,16 +54,29 @@ class FeedVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         chosenHero = self.heroArray[indexPath.row]
-        performSegue(withIdentifier: "toDetailsVC", sender: nil)
+        performSegue(withIdentifier: "toDetailsVC", sender: chosenHero)
+        
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetailsVC" {
             let destinationVC = segue.destination as! Hero_Details
-            destinationVC.receivedHeroLabel = chosenHero!.details
-            destinationVC.receivedHeroImage = UIImage(named: chosenHero!.heroImage)
+            let hero = sender as? heroes
+            destinationVC.receivedHeroLabel = hero?.details
+            destinationVC.receivedHeroImage = UIImage(named: hero?.heroImage ?? "")
+            destinationVC.heroName = hero?.name
+            
         }
     }
-  
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        heroArray.count
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath as IndexPath) as! FirstCollectionViewCell
+        cell.collectionImageView.image = UIImage(named: heroArray[indexPath.row].heroImage)
+        cell.collectionLabel.text = heroArray[indexPath.row].name
+        return cell
+    }
+   
 
 
 }

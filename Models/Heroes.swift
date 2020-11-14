@@ -8,14 +8,14 @@
 import Foundation
 
 struct heroes {
-    
     let name: String
     let details:String
     let heroImage:String
+   
+   
     
-
-    }
-let diana = heroes(name: "Diana", details: "Dodging her Crescent Strike will lower her damage output significantly after level 6.2nd Her Shield lasts for only a short while, so wait until it wears out and harass her after.3rd.By using a knock-up (e.g. Blitzcrank's Power Fist) and/or displacement (Tristana's Buster Shot) while she is using her ultimate on a marked target will deny her a reset on her ultimate", heroImage: "Diana")
+}
+    let diana = heroes(name: "Diana", details: "Dodging her Crescent Strike will lower her damage output significantly after level 6.2nd Her Shield lasts for only a short while, so wait until it wears out and harass her after.3rd.By using a knock-up (e.g. Blitzcrank's Power Fist) and/or displacement (Tristana's Buster Shot) while she is using her ultimate on a marked target will deny her a reset on her ultimate", heroImage: "Diana")
 
 let ahri = heroes(name: "Ahri", details: "Stay behind minions to prevent yourself from getting charmed.", heroImage: "Ahri")
 let akali = heroes(name: "Akali", details: "After level 6, try to prevent her use of Mark of the Assassin, as she can proc it twice using her dashes", heroImage: "Akali")
@@ -31,7 +31,7 @@ let neeko = heroes(name: "Neeko", details: "Be cautious when chasing low health 
 let orianna = heroes(name: "Orianna", details: "Try not to stand next to her ball, because she can cast Dissonance and do damage around it.", heroImage: "Orianna")
 let qiyana = heroes(name: "Qiyanna", details: "FF AT 15", heroImage: "Qiyana")
 let sylas = heroes(name: "Sylas", details: "GG WP", heroImage: "Sylas")
-let syndra = heroes(name: "Syndra", details: "Syndra is vulnerable after she uses her Scatter the Weak. Try to play aggressive while it's down.", heroImage: "Syndra")
+let syndra = heroes(name: "Syndra", details: "Syndra is vulnerable after she uses her Scatter the Weak. Try to play aggressive while it's down.", heroImage: "syndra")
 let talon = heroes(name: "Talon", details: "Talon is very vulnerable when his Cutthroat is on cooldown. Try to take advantage of the situation when it is on cooldown.", heroImage: "Talon")
 let twistedfate = heroes(name: "Twisted Fate", details: "Twisted Fate is vulnerable when his Pick-a-card is on cooldown.", heroImage: "Twisted Fate")
 let veigar = heroes(name: "Veigar", details: "Veigar's stun field will only stun targets around the edge. So you can either stay inside the ring, or Flash out of it.", heroImage: "Veigar")
@@ -42,6 +42,7 @@ let yone = heroes(name: "Yone", details: "GO AFK", heroImage: "Yone")
 let zed = heroes(name: "Zed", details: "If a Zed uses his Living Shadow aggressively, he is very vulnerable. Try to coordinate a gank using his cooldowns. ", heroImage: "Zed")
 let ziggs = heroes(name: "Ziggs", details: "Try to avoid being in the center of Ziggs' ultimate, as it deals more damage in the center.", heroImage: "Ziggs")
 let zoe = heroes(name: "Zoe", details:"FF ", heroImage: "Zoe")
+
 
 
 
