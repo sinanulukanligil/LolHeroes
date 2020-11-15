@@ -6,10 +6,10 @@ target 'LolHeroes' do
   use_frameworks!
 
   # Pods for LolHeroes
-pod 'Firebase/Analytics'
-pod 'Firebase/Storage'
-pod 'Firebase/Auth'
-pod 'Firebase/Analytics'
-pod 'Firebase/Firestore'
-
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Firestore'
+  pod 'Kingfisher', '~> 5.0'
 end

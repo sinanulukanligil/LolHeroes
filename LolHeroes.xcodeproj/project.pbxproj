@@ -21,6 +21,13 @@
 		29EF8801255733DE00B364C4 /* Hero Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF8800255733DE00B364C4 /* Hero Details.swift */; };
 		29F468F1255D8F0400651A71 /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F468F0255D8F0400651A71 /* FirstCollectionViewCell.swift */; };
 		D974B5CD17738B7B1A532876 /* Pods_LolHeroes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B63C34A9D23650629E932D2 /* Pods_LolHeroes.framework */; };
+		F75693FA2561B1CA004A78B7 /* KaanHeroesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75693F92561B1CA004A78B7 /* KaanHeroesVC.swift */; };
+		F75693FF2561B28A004A78B7 /* KaanHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75693FE2561B28A004A78B7 /* KaanHero.swift */; };
+		F75694072561B5BC004A78B7 /* KaanHeroFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75694052561B5BC004A78B7 /* KaanHeroFeedTableViewCell.swift */; };
+		F75694082561B5BC004A78B7 /* KaanHeroFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F75694062561B5BC004A78B7 /* KaanHeroFeedTableViewCell.xib */; };
+		F75694392561BFF8004A78B7 /* KaanHeroDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75694382561BFF8004A78B7 /* KaanHeroDetailVC.swift */; };
+		F75694402561C49E004A78B7 /* KaanHeroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756943E2561C49E004A78B7 /* KaanHeroCollectionViewCell.swift */; };
+		F75694412561C49E004A78B7 /* KaanHeroCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F756943F2561C49E004A78B7 /* KaanHeroCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +49,13 @@
 		29F468F0255D8F0400651A71 /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
 		7587C6FEDAAA5F2E198E4B22 /* Pods-LolHeroes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LolHeroes.release.xcconfig"; path = "Target Support Files/Pods-LolHeroes/Pods-LolHeroes.release.xcconfig"; sourceTree = "<group>"; };
 		E2C1892BFC58DA9B127F733C /* Pods-LolHeroes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LolHeroes.debug.xcconfig"; path = "Target Support Files/Pods-LolHeroes/Pods-LolHeroes.debug.xcconfig"; sourceTree = "<group>"; };
+		F75693F92561B1CA004A78B7 /* KaanHeroesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaanHeroesVC.swift; sourceTree = "<group>"; };
+		F75693FE2561B28A004A78B7 /* KaanHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaanHero.swift; sourceTree = "<group>"; };
+		F75694052561B5BC004A78B7 /* KaanHeroFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaanHeroFeedTableViewCell.swift; sourceTree = "<group>"; };
+		F75694062561B5BC004A78B7 /* KaanHeroFeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KaanHeroFeedTableViewCell.xib; sourceTree = "<group>"; };
+		F75694382561BFF8004A78B7 /* KaanHeroDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaanHeroDetailVC.swift; sourceTree = "<group>"; };
+		F756943E2561C49E004A78B7 /* KaanHeroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaanHeroCollectionViewCell.swift; sourceTree = "<group>"; };
+		F756943F2561C49E004A78B7 /* KaanHeroCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KaanHeroCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,7 @@
 		293635DE2557239A0085A7C7 /* LolHeroes */ = {
 			isa = PBXGroup;
 			children = (
+				F75693F82561B1AA004A78B7 /* Kaan */,
 				293635DF2557239A0085A7C7 /* AppDelegate.swift */,
 				293635E12557239A0085A7C7 /* SceneDelegate.swift */,
 				293635DD2557239A0085A7C7 /* Products */,
@@ -119,6 +134,52 @@
 				7587C6FEDAAA5F2E198E4B22 /* Pods-LolHeroes.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F75693F82561B1AA004A78B7 /* Kaan */ = {
+			isa = PBXGroup;
+			children = (
+				F756943D2561C480004A78B7 /* CollectionViewCells */,
+				F75694042561B598004A78B7 /* TableViewCells */,
+				F75693FD2561B270004A78B7 /* Model */,
+				F75694022561B380004A78B7 /* ViewControllers */,
+			);
+			path = Kaan;
+			sourceTree = "<group>";
+		};
+		F75693FD2561B270004A78B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F75693FE2561B28A004A78B7 /* KaanHero.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F75694022561B380004A78B7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F75693F92561B1CA004A78B7 /* KaanHeroesVC.swift */,
+				F75694382561BFF8004A78B7 /* KaanHeroDetailVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F75694042561B598004A78B7 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F75694052561B5BC004A78B7 /* KaanHeroFeedTableViewCell.swift */,
+				F75694062561B5BC004A78B7 /* KaanHeroFeedTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		F756943D2561C480004A78B7 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F756943E2561C49E004A78B7 /* KaanHeroCollectionViewCell.swift */,
+				F756943F2561C49E004A78B7 /* KaanHeroCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +244,9 @@
 				293635EC2557239B0085A7C7 /* LaunchScreen.storyboard in Resources */,
 				293635F52557246A0085A7C7 /* GoogleService-Info.plist in Resources */,
 				293635E92557239B0085A7C7 /* Assets.xcassets in Resources */,
+				F75694412561C49E004A78B7 /* KaanHeroCollectionViewCell.xib in Resources */,
 				293635E72557239A0085A7C7 /* Main.storyboard in Resources */,
+				F75694082561B5BC004A78B7 /* KaanHeroFeedTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,12 +301,17 @@
 			files = (
 				29EF87F92557318900B364C4 /* FeedVC.swift in Sources */,
 				293635E42557239A0085A7C7 /* SignInVC.swift in Sources */,
+				F75694402561C49E004A78B7 /* KaanHeroCollectionViewCell.swift in Sources */,
 				293635E02557239A0085A7C7 /* AppDelegate.swift in Sources */,
+				F75693FA2561B1CA004A78B7 /* KaanHeroesVC.swift in Sources */,
 				29EF8801255733DE00B364C4 /* Hero Details.swift in Sources */,
+				F75694392561BFF8004A78B7 /* KaanHeroDetailVC.swift in Sources */,
 				296407E5255846B000F9BD07 /* Heroes.swift in Sources */,
 				296407EE25584A7C00F9BD07 /* FeedCell.swift in Sources */,
 				29F468F1255D8F0400651A71 /* FirstCollectionViewCell.swift in Sources */,
+				F75693FF2561B28A004A78B7 /* KaanHero.swift in Sources */,
 				29EF87FC255731A600B364C4 /* Setting VC.swift in Sources */,
+				F75694072561B5BC004A78B7 /* KaanHeroFeedTableViewCell.swift in Sources */,
 				293635E22557239A0085A7C7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LolHeroes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -411,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LolHeroes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
