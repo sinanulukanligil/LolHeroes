@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FeedVC: UIViewController,UITableViewDelegate,UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
+class FeedVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
   
     var chosenHero: heroes? = nil
@@ -15,7 +15,7 @@ class FeedVC: UIViewController,UITableViewDelegate,UITableViewDataSource, UIColl
    var heroArray = [diana,azir,ahri,akali,cass,fizz,galio,kassadin,katarina,leblanc,malzahar,neeko,orianna,qiyana,sylas,syndra,talon,twistedfate,veigar,viktor,vlad,yasuo,yone,ziggs,zoe,zed]
 
     @IBOutlet var collectionView: UICollectionView!
-    @IBOutlet var collectionViewHeader: UILabel!
+  
     
     @IBOutlet var feedTableView: UITableView!
     override func viewDidLoad() {
@@ -23,8 +23,7 @@ class FeedVC: UIViewController,UITableViewDelegate,UITableViewDataSource, UIColl
        
         feedTableView.delegate = self
         feedTableView.dataSource = self
-        collectionView.delegate = self
-        collectionView.dataSource = self
+       
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         
@@ -67,16 +66,5 @@ class FeedVC: UIViewController,UITableViewDelegate,UITableViewDataSource, UIColl
             
         }
     }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        heroArray.count
-    }
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath as IndexPath) as! FirstCollectionViewCell
-        cell.collectionImageView.image = UIImage(named: heroArray[indexPath.row].heroImage)
-        cell.collectionLabel.text = heroArray[indexPath.row].name
-        return cell
-    }
-   
-
 
 }
